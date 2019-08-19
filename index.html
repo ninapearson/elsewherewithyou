@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<head>
+  <title>elsewhere with you</title>
+</head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/png" href="images/favicontree.png">
+
+
+<body>
+  <header>
+      <nav>
+        <ul>
+          <li><a href="about.html">about</a></li>
+          <li><a href="recenttrips.html">recent trips</a></li>
+        </li>  
+      </nav>
+    </header>
+
+  <div> 
+    <h1>elsewhere with you</h1>  
+  </div>
+
+
+  <div>
+    <h3>In the end, we won't remember the time we spent scrolling through twitter or watching netflix in bed, catching the train to work, washing the dishes or cleaning our apartments. We'll remember the moments elsewhere.</h3>
+  </div>  
+
+
+  <div>
+   <img src="images/elsewherepic.png" >
+  </div>
+
+  <div>
+    <p>enter a destination</p>
+  </div>
+
+
+  <div> 
+    <input id="destination">
+  </div>  
+
+
+  <div>
+    <button id="takeme">Go</button> 
+    
+  </div>
+
+  <script>
+  var input = document.getElementById("destination");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("takeme").click();
+    }
+  });
+  </script>
+
+
+<div id="result">
+ 
+  <script>
+    function generate_destination() 
+      {
+
+        var fdestination = document.getElementById('destination').value;
+          document.getElementById("result").style.fontSize = "1.7vw";
+          document.getElementById("result").style.fontFamily = "Merriweather, serif";
+          document.getElementById("result").style.textAlign = "center";
+
+
+      if (fdestination=="berlin") {
+        var html = "You can’t explain Berlin. You either feel it or you don’t, and it’s not for everybody. But Berlin was definitely for us. A cold night in late September and a couple of beers brought us together. We didn’t come with too much of a plan. Berlin forced us to release our grip.  In a city so full of history, culture and people it was easy to just fall into a lifestyle of events, drinking in bars, dancing on the spree, kissing in club bathrooms, cycling through the traffic mayhem, searching for nooks of nature, barely sleeping and waking up to do it all again."; 
+      }
+      
+
+      else if (fdestination=="germany" || fdestination=="serbia" || fdestination=="montenegro" || fdestination=="france" || fdestination=="italy" || fdestination=="poland" || fdestination=="the netherlands" || fdestination=="holland") {
+        var html = "The best part of the journey around " + fdestination + " wasn't always the food or the views, it was having you to share it all with."; 
+      }
+
+      else if (fdestination=="indonesia") {
+        var html = "We read that there was a lot a of adventuring to do here. Indonesia did not disappoint. Motorcycling through palm trees, hiking to crater rims, surfing through swarms of stinging jellyfish, navigating forest paths unwalked, finding the best street food, swimming in the clearest blue waters. Entire days spent enjoying the outdoors made for two happy adventurers."; 
+      }
+
+      else if (fdestination=="karimun jawa"){
+        var html = "There is nothing quite like the ease of waking up and seeing the blue sea. We spent our days on the motorbike, swimming in the crystal clear waters and our evenings eating good food, trading jokes and stories and kisses. You’re from here, I’m from there, we played each others games. 'Guru' and a version of 'coo and can 500' because the real rules had slipped our minds. We snapped pictures that we’ll reminisce over in years to come. We walked and walked some more, to the beach and back again, up and down to the ‘Bukit Love’ (Love hill) look out point. The hill of beginnings, of fond kisses, moments for us to keep."; 
+      }
+
+      else if (fdestination=="bali") {
+        var html = "The air throughout Bali almost smells sweet with frangipani trees and bougainvillea lining the streets, only almost because the streets are filled with cars and motorcycles and the stench of petrol and burning plastic is much more potent. Nevertheless, at the beach, the dusk air and sound of the waves crashing on the shore is calming. The island speaks of simpler times, times where all you need is less, a beer, a good serving of nasi goreng, swimmers and maybe a surfboard. Days here were spent riding around the island to hidden beaches, rice fields and good restaurants, mixed with a little bit of cuture and a little bit of partying. Simple but pleasing."; 
+      }
+
+      else if (fdestination=="lombock") {
+        var html = "Pitch black, whirling wind, gravel track. Two steps forward one step back. The mere light of our phone flashlights to guide the way. The morning hike to the summit of Rinjani, completed just before the sun rose to warm the island was a real challenge. A most rewarding, unforgettable challenge."; 
+      }
+
+      else if (fdestination=="nusa penida") {
+        var html = "We read on a blog that no one leaves Nusa Penida without having a motorbiking accident, how naive to think that it wouldn’t happen to us. On the first morning we set out on our bikes to explore the vast corners of the island. The journey came with a rewarding midway dip at Atuh Beach, and countless view points. On the way to our second to last stop, Angel’s Billabong, we dodged dogs, and potholes on the road. The poor road soon turned to a dirt hill and the small amount of profile that was left on the wheels of our rental bike didn’t hold out. She lost control of the bike and we were sent speeding down the hill, only for a moment before we were sent tumbling to the floor, the bike landing on him and leaving us both bruised and bleeding. Small scars still adorn our skin to remind us of this adventure."; 
+      }
+
+      else if (fdestination=="alsace" || fdestination=="bergholtzzell") {
+        var html = "The start of our bike journey to Bergholtzzell in Alsace couldn’t have been more disheartening. It was raining, so we decided to catch the train to Langenthal to save ourselves 45 km. On the train, his front tyre valve broke off. It was a public holiday so with no stores open, we could only thank our lucky stars that he, found a man working in his garage who could spare us a tyre. We lost some time replacing the tyre which meant we didn’t reach our ‘planned’ destination on the first night – a forest looking area on the french side of the border between Switzerland and France, instead we found a pizza restaurant and a different forest, still in Switzerland to pitch our tent. It was the most serene camping spot, we slept well. The rest of the journey was somewhat smoother and after another 80 km of bike riding we arrived at our airbnb. We were greeted with locally brewed beers and enjoyed a balmy evening on the terrace of our renovated barn house from 1699. There there was a certain je ne sais quoi in the chaos of this trip, the challenge of riding the whole way to Alsace attracted our attention, the bike trail dotted with blooming spring flowers flattered our imaginations, and the house perched amongst the vineyards gained upon our hearts. Très magnifique."; 
+      }
+
+      else if (fdestination=="menton") {
+        var html = "The romance of a road trip is always tempting. After much deliberation of how to get to the beach over Easter ‘19 we decided to pack our tent in the little yellow fiat panda and drive to Menton. After a long drive through winding roads and coastal streets we parked in the most magnificent camping place. Amongst the olive trees, with an ocean view, underneath the stars, Menton was dreamy."; 
+      }
+
+      else if (fdestination=="paris" || fdestination=="lacanau") {
+        var html = "Adventures are to be had here very soon."; 
+      }
+
+      else if (fdestination=="belgrade") {
+        var html = "We bought beers from the convenience store, and met some guys at the hostel. We downed long island ice teas at the bar in the ruins of the fortress and like ships lost at sea, we slow danced with midnight, the open air club nestled in the medieval castle of Kalemegdan lit up the sky, beckoning like a distant star, another sleepless night…."; 
+      }
+
+      else if (fdestination=="ulcinj") {
+        var html = "Once in a while we like a slow morning in bed, with the window open and he ocean breeze wafting in through our window, it’s only when out stomachs begin to growl that we untangle our bodies and head to the kitchen for a coffee, scrambled eggs and fresh figs. The morning, a brief moment of escapism, now it’s back to trekking along coastlines, finding hidden beaches and jumping off cliffs."; 
+      }
+
+      else if (fdestination=="albania") {
+        var html = "Albania was the ultimate destination. Adrenaline high while traversing the mountain peaks, peaceful nights in the valley. Grounding the soles of our feet in the sand and succumbing to the strength of the waves at the coast. Enveloping ourselves in the culturally rich cities, learning the traditions and embracing having to eat white bread with every single dish. Albania, we will return one day to further delve into your mountain peaks and swim in your stunning waters."; 
+      }
+
+      else if (fdestination=="gjipe" || fdestination=="dhermi") {
+        var html = "There’s not a lot of things in the world that can bring peace of mind like the gently idling Ionian waves. Any lingering stress from the long bus rides, and from being accompanied by a fierce stray dog for an hours long trek to out camping spot is alleviated by the glimmer of the turquoise blue water and the feeling of salty skin and sandy feet."; 
+      }
+
+      else if (fdestination=="valbona" || fdestination=="theth") {
+        var html = "An endless valley, winding roads that cut through lush mountains and zero phone service made for a one-of-a-kind, serene journey. We tend to take the drive/ride/walk-until-we-find-something route. A few kilometres before Theth we found a camping site to rest our tired bodies before a bumpy drive to Theth and the days hike to Valbona. The hike took us to the top of a mountain and back down the other side. The views were amazing, and the trek was a reminder of the vast incomprehensibility of mother nature. Again, we had no accomodation planned in Valbona, so chasing the light and in awe at the beauty of it all, we descended into the valley and managed to find a signal on our phone which allowed us to find a stunning guest house in which we stayed two unforgettable nights."; 
+      }
+      
+      else if (fdestination=="rome") {
+        var html = "We ate freshly made pizza and pasta adorned with fresh basil, we sipped aperol spritz and swapped stories from our yesteryears. We still have so much to learn about each other and spend nights long discussing our futures and reminiscing on our pasts, but always present in the moment. Late night walks back to our hostel are filled with yawns and I love yous. I love you."; 
+      }
+
+      else if (fdestination=="bonasolla") {
+        var html = "Climbing through the cobblestone streets, drinking blood orange juice, eating freshly made focaccia, and playing cards on the terrace. It’s often the simple things in life that can bring so much joy."; 
+      }
+
+      else if (fdestination=="rora") {
+        var html = "As we emptied bottles of red wine, we filled to the brim and spilled over into dancing and shouting and embraces. We entangled our bodies up and down. We woke up to the bruises on our knees and thighs, our tender red lips forming a smile."; 
+      }
+
+      else if (fdestination=="sopot") {
+        var html = "Every morning commences with white sheets and the reluctance to leave the warmth of our hotel bed. Everyday involves a trip to the sea and every evening we treat ourselves so the local food, one night pierogi, one night locally caught fish. Hearts and bellies full, we realised how happy we were to be out of Berlin.";
+      }
+
+      else if (fdestination=="switzerland") {
+        var html = "Theres is no place like home.";
+      }
+
+      else if (fdestination=="bern") {
+        var html = "Through everything, through all of life’s dips and swirls and challenges, to be here beside you, hand in hand is all I could have hoped for. Eating, sleeping, giggling, together along the way. A million thank you’s for being an absolute dream life partner";
+      }
+
+      else if (fdestination=="basel") {
+        var html = "And we thought soon enough we’ll have responsibility and we won’t have February to spare so we’ll worry and wonder when we’ll see each other again. We lay in bed glaring into the darkness, holding onto the feeling of togetherness for a few moments longer.";
+      }
+
+      else if (fdestination=="zorten") {
+        var html = "Miles of open trails weave through snow-covered trees. It’s cool outside and cosy in here. But we brave the cold and trudge through the snow, and before we know it we’ve trekked much further than planned – him, always eager to reach the highest peak – and the sun is setting, the clouds are caving in and we’re running out of time to get back home before dark. No graceful descent, with no skiers in sight, 1,2,3 and we’re sprinting down the ski run, sprinting to the bottom just before dark.";
+      }
+
+      else if (fdestination == "singapore") {
+        var html = "Travel isn’t perfect, it’s messy hostel rooms, dirty clothes, sweaty bodies and sore feet, it’s waiting lines, and expensive tickets, skipping museums to sit in air-conditioned shopping malls to cool off, it’s roaming around aimlessly to find authentic, spicy meals, its about making plans and breaking plans because some of the best memories are formed in chaos.";
+      }
+
+      else if (fdestination =="amsterdam") {
+        var html = "Day were spent zooming around the canals in hysterics on rental bikes with only pedal brakes.";
+      }
+
+      else if (fdestination =="australia") {
+        var html = "Australia is defined by it’s great outdoors, waterfalls, beaches, tea tree lakes and rockpools, unique rugged mountain ranges, and the driest red deserts. Australia we are defintely coming for you";
+      }
+
+      else if (fdestination =="sydney") {
+        var html = "A city of magnificent beaches, unique flora and where life is lived outdoors. There are so many places to eat and eat well and important Australian traditions to embrace like eating fish and chips beachside. Can’t wait till we’re here together.";
+      }
+
+      else if (fdestination =="") {
+        var html = "oops you didn't enter a city or country";
+      }
+   
+        else  {
+          var html = "no memories have been recorded in " + fdestination +  " yet "; 
+        }
+
+ 
+    document.getElementById('result').innerHTML = html;
+    document
+
+      
+}
+
+document.getElementById('takeme').addEventListener('click', generate_destination); 
+
+
+</script>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+<!--<script>
+function check()
+{
+  document.getElementById('f1').innerHTML = document.myform.name.value;
+    
+}
+</script>
+
+
+<form name='myform'>
+<p>In the end, you won't remember the time you spent watching tv or playing video games on your couch, working in the office, washing your dishes or mowing your lawn. You'll remember the moments ELSEWHERE. Where to next? 
+<input type = 'text' country='country' value='enter destination'
+<p><input type = 'submit' onclick='check(); return false'></p>
+</p>   
+</form>  
+<p> </p>
+<p id='f1'></p>
+
+ ns -->
