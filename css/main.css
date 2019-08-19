@@ -1,0 +1,159 @@
+
+body {
+  background-color: #F7F2EC;
+  font-family: 'Merriweather', serif
+  margin-top:20px;
+  margin-right:20px;
+  margin-left:20px;
+  margin-bottom:100px;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 4.5vw;
+	font-weight: 300;
+    font-style: normal;
+    line-height: 2.8em;
+    letter-spacing: 0.1em; 
+    text-align: center;
+    display: block;
+    padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 80px;
+	padding-bottom: 5px;  
+}
+
+
+h2 {
+	
+	font-family: 'Merriweather', serif;
+	font-size: 1.5vw;
+	letter-spacing: 0.01em; 
+	line-height: 1.8em;
+	text-align: center;	
+	display: block;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 5px;
+
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 2vw;
+	letter-spacing: 0.01em; 
+	line-height: 1.8em;
+	text-align: center;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top:25px;
+  	width: 80%;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	font-size: 2vw;
+	letter-spacing: 0.01em; 
+	line-height: 1.8em;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top:40px;
+  	width: 40%;
+}
+
+
+input {
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top:0px;
+  	margin-bottom: 10px;
+  	width: 12%;
+  	border: 2px solid black;
+  	text-align: center; 
+}
+
+button {
+ 	font-family: 'Merriweather', serif;
+ 	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top:25px;
+  	margin-bottom: 5px;
+  	width: 5%;
+  	background-color: white;
+  	padding: 5px 5px 5px;
+  	color: black;
+  	border: 2px solid black;
+
+}
+
+button:hover {
+  background-color: black;
+  color: white; 	
+}
+
+div {
+	border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+a {
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+	color: black;
+ 	display: block;
+ 	text-align: right; 
+ 	margin-top: 25px;
+  	margin-right: 25px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #AE6243;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+nav ul li {
+ text-align: right; 
+ display: inline-block;
+ list-style-type: none;
+ padding: 10px 0;
+ float: right;
+}
+
+
+#result { 
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 5px
+ }
+
+
+.card img{
+    width: 100%;
+    height: auto;
+}
